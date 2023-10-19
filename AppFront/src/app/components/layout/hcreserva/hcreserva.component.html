@@ -1,0 +1,60 @@
+<section class="container-fluid">
+    <form [formGroup]="formulario" id="formulario" class="formulario" (ngSubmit)="onSubmit()">
+      <section class="mb-3">
+        <label>Nombre Completo</label>
+        <input type="text" class="form-control" formControlName="nombrecompleto">
+      </section>
+      <section class="mb-3">
+        <label>Correo</label>
+        <input type="email" class="form-control" formControlName="email">
+      </section>
+      <section class="mb-3">
+        <label>Telefono</label>
+        <input type="number" class="form-control" formControlName="telnumero">
+      </section>
+      <section class="mb-3">
+        <label>Ciudad</label>
+        <input type="text" class="form-control" formControlName="ciudad">
+      </section>
+      <section class="mb-3">
+        <label>Codigo Postal</label>
+        <input type="number" class="form-control" formControlName="cpostal">
+      </section>
+      <section class="mb-3">
+        <label>Pais</label>
+        <input type="text" class="form-control" formControlName="pais">
+      </section>
+      <section class="mb-3">
+        <label>Detalles De Viaje</label>
+        <input placeholder="Vacaciones, Luna de miel, Negocios, ect" type="text" class="form-control"
+          formControlName="detallesviaje">
+      </section>
+      <section class="mb-3">
+        <label>Destino</label>
+        <input type="text" class="form-control" formControlName="destino" [value]="playa">
+      </section>
+      <section class="mb-3">
+        <label>Fecha de Inicio</label>
+        <input type="date" class="form-control" formControlName="fechai">
+      </section>
+      <section class="mb-3">
+        <label>Fecha De Fin</label>
+        <input type="date" class="form-control" formControlName="fechaf">
+      </section>
+      <section class="mb-3">
+        <label>Numero De Adultos</label>
+        <input type="number" class="form-control" formControlName="numeroadultos">
+      </section>
+      <section class="mb-3">
+        <label>Numero De Niños</label>
+        <input type="number" class="form-control" formControlName="numeronino">
+      </section>
+      <section class="mb-3">
+        <label>Tipo De Habitacion</label>
+        <input type="text" class="form-control" formControlName="tipohabit">
+      </section>
+      <input type="submit" value="Enviar" class="btn btn-info">
+    </form>
+    <img class="img" src="../../../../assets/source/travel/umbrella.jpg" alt="" srcset="">
+  </section>
+  

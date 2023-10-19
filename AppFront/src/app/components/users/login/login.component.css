@@ -1,0 +1,42 @@
+.form-control {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 3px;
+
+
+}
+
+.formulario {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f6a535;
+  font-family: 'Kalam', cursive;
+
+}
+
+.container {
+  margin-top: 5%;
+  /* Coloca el borde superior del div en el 50% del espacio vertical */
+  margin-left: 40%;
+  margin-bottom: 300px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.linea1 {
+  font-family: 'Kalam', cursive;
+  font-size: 30px;
+  color: black;
+  font-style: bold;
+}
+
+.mt-5 {
+  color: rgb(199, 91, 13);
+  font-size: 40px;
+}

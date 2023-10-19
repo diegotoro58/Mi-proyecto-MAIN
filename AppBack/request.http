@@ -1,0 +1,590 @@
+########################Beaches#########################
+POST http://localhost:9000/api/beaches HTTP/1.1
+Content-Type: application/json
+
+ {
+    "playa": "baía do Sancho",
+    "pais": "brasil",
+    "ciudad": "fernando de noronha",
+    "hoteles": [
+      {
+        "nombre": "pousada portal dos golfinhos",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "pousada canto do boldro",
+        "estrellas":
+      }
+    ]
+  }
+  ########################Beaches Many#########################
+#####
+POST http://localhost:9000/api/beachesMany HTTP/1.1
+Content-Type: application/json
+
+[
+  {
+    "playa": "baía do Sancho",
+    "pais": "brasil",
+    "ciudad": "fernando de noronha",
+    "hoteles": [
+      {
+        "nombre": "pousada portal dos golfinhos",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "pousada canto do boldro",
+        "estrellas": 4.9
+      }
+    ]
+  },
+  {
+    "playa": "balos lagoon",
+    "pais": "grecia",
+    "ciudad": "la canea",
+    "hoteles": [
+      {
+        "nombre": "balos beach",
+        "estrellas": 4.7
+      },
+      {
+        "nombre": "sunny bay hotel",
+        "estrellas": 4.6
+      }
+    ]
+  },
+  {
+    "playa": "eagle beach",
+    "pais": "aruba",
+    "ciudad": "oranjestad",
+    "hoteles": [
+      {
+        "nombre": "hyatt place aruba",
+        "estrellas": 4.4
+      },
+      {
+        "nombre": "eagle aruba resort & casino",
+        "estrellas": 4.3
+      }
+    ]
+  },
+  {
+    "playa": "cable beach",
+    "pais": "australia",
+    "ciudad": "broome",
+    "hoteles": [
+      {
+        "nombre": "cable beach backpackers",
+        "estrellas": 4.1
+      },
+      {
+        "nombre": "beach of broome",
+        "estrellas": 4.4
+      }
+    ]
+  },
+  {
+    "playa": "reynisfjara",
+    "pais": "islandia",
+    "ciudad": "dyrholaey",
+    "hoteles": [
+      {
+        "nombre": "katla keahotel",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "martina and jon b&b",
+        "estrellas": 5.0
+      }
+    ]
+  },
+  {
+    "playa": "grace bay",
+    "pais": "islas turcas y caicos",
+    "ciudad": "providenciales",
+    "hoteles": [
+      {
+        "nombre": "royal west indies resort",
+        "estrellas": 4.4
+      },
+      {
+        "nombre": "villa del mar resort",
+        "estrellas": 4.6
+      }
+    ]
+  },
+  {
+    "playa": "praia da falésia",
+    "pais": "portugal",
+    "ciudad": "albufeira",
+    "hoteles": [
+      {
+        "nombre": "tivoli carvoeiro resort",
+        "estrellas": 4.6
+      },
+      {
+        "nombre": "don jose beach hotel",
+        "estrellas": 4.4
+      }
+    ]
+  },
+  {
+    "playa": "radhanagar",
+    "pais": "india",
+    "ciudad": "govind nagar",
+    "hoteles": [
+      {
+        "nombre": "blue ocean resort",
+        "estrellas": 3.8
+      },
+      {
+        "nombre": "dreamland resort",
+        "estrellas": 3.8
+      }
+    ]
+  },
+  {
+    "playa": "spiaggia dei conigli",
+    "pais": "italia",
+    "ciudad": "lampedusa",
+    "hoteles": [
+      {
+        "nombre": "hotel belvedere",
+        "estrellas": 3.8
+      },
+      {
+        "nombre": "moresco resort",
+        "estrellas": 4.4
+      }
+    ]
+  },
+  {
+    "playa": "varadero",
+    "pais": "cuba",
+    "ciudad": "varadero",
+    "hoteles": [
+      {
+        "nombre": "hotel hanabanilla",
+        "estrellas": 3.8
+      },
+      {
+        "nombre": "hotel plaza",
+        "estrellas": 3.2
+      }
+    ]
+  },
+  {
+    "playa": "ka anapali",
+    "pais": "usa",
+    "ciudad": "hawai",
+    "hoteles": [
+      {
+        "nombre": "sheraton maui resort & spa",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "kaanapali ocean inn",
+        "estrellas": 3.8
+      }
+    ]
+  },
+  {
+    "playa": "siesta",
+    "pais": "usa",
+    "ciudad": "florida",
+    "hoteles": [
+      {
+        "nombre": "hampton inn and suites",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "sieta key beach resort and suites",
+        "estrellas": 4.0
+      }
+    ]
+  },
+  {
+    "playa": "driftwood",
+    "pais": "usa",
+    "ciudad": "georgia",
+    "hoteles": [
+      {
+        "nombre": "hampton inn kingsland",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "hampton inn waycross",
+        "estrellas": 3.9
+      }
+    ]
+  },
+  {
+    "playa": "manly beach",
+    "pais": "australia",
+    "ciudad": "nueva gales del sur",
+    "hoteles": [
+      {
+        "nombre": "hotel steyne",
+        "estrellas": 3.9
+      },
+      {
+        "nombre": "boardrider backpacker budget motel",
+        "estrellas": 3.7
+      }
+    ]
+  },
+  {
+    "playa": "seven mile beach",
+    "pais": "isla caiman",
+    "ciudad": "gran caiman",
+    "hoteles": [
+      {
+        "nombre": "the grand caymanian resort",
+        "estrellas": 4.2
+      },
+      {
+        "nombre": "hampton by hilton grand cayman seven mile beach",
+        "estrellas": 4.5
+      }
+    ]
+  },
+  {
+    "playa": "la concha",
+    "pais": "españa",
+    "ciudad": "san sebastian",
+    "hoteles": [
+      {
+        "nombre": "koisi hostel",
+        "estrellas": 4.2
+      },
+      {
+        "nombre": "hotel silken amara plaza",
+        "estrellas": 4.2
+      }
+    ]
+  },
+  {
+    "playa": "kelingking",
+    "pais": "indonesia",
+    "ciudad": "denpasar",
+    "hoteles": [
+      {
+        "nombre": "relax beach resort",
+        "estrellas": 4.4
+      },
+      {
+        "nombre": "the mesare resort nusa penida",
+        "estrellas": 4.5
+      }
+    ]
+  },
+  {
+    "playa": "playa de muro",
+    "pais": "españa",
+    "ciudad": "palma",
+    "hoteles": [
+      {
+        "nombre": "alcudia port suites",
+        "estrellas": 4.6
+      },
+      {
+        "nombre": "playa esperanza resort",
+        "estrellas": 4.4
+      }
+    ]
+  },
+  {
+    "playa": "playa manuel antonio",
+    "pais": "costa rica",
+    "ciudad": "quepos",
+    "hoteles": [
+      {
+        "nombre": "san bada",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "hotel manuel antonio",
+        "estrellas": 4.1
+      }
+    ]
+  },
+  {
+    "playa": "ipanema",
+    "pais": "brasil",
+    "ciudad": "rio de janeiro",
+    "hoteles": [
+      {
+        "nombre": "ipanema beach house",
+        "estrellas": 4.2
+      },
+      {
+        "nombre": "mar ipanema hotel",
+        "estrellas": 4.3
+      }
+    ]
+  },
+  {
+    "playa": "nungwi",
+    "pais": "tanzania",
+    "ciudad": "zanzibar",
+    "hoteles": [
+      {
+        "nombre": "greens nungwi",
+        "estrellas": 4.1
+      },
+      {
+        "nombre": "zenobia beach resort zanzibar",
+        "estrellas": 4.4
+      }
+    ]
+  },
+  {
+    "playa": "falassarna",
+    "pais": "grecia",
+    "ciudad": "la canea",
+    "hoteles": [
+      {
+        "nombre": "falassarna bay",
+        "estrellas": 4.5
+      },
+      {
+        "nombre": "balos beach",
+        "estrellas": 4.5
+      }
+    ]
+  },
+  {
+    "playa": "nissi",
+    "pais": "chipre",
+    "ciudad": "larnaca",
+    "hoteles": [
+      {
+        "nombre": "cabos maris beach hotel",
+        "estrellas": 4.6
+      },
+      {
+        "nombre": "gracian park hotel",
+        "estrellas": 4.6
+      }
+    ]
+  },
+  {
+    "playa": "playa norte",
+    "pais": "mexico",
+    "ciudad": "cancun",
+    "hoteles": [
+      {
+        "nombre": "mia reef mujeres all inclusive resort",
+        "estrellas": 4.5
+      },
+      {
+        "nombre": "ixchel beach hotel",
+        "estrellas": 4.6
+      }
+    ]
+  },
+  {
+    "playa": "magens bay",
+    "pais": "usa",
+    "ciudad": "san tomas islas virgenes",
+    "hoteles": [
+      {
+        "nombre": "bunker hill hotel",
+        "estrellas": 4.0
+      },
+      {
+        "nombre": "emerald beach resort",
+        "estrellas": 4.1
+      }
+    ]
+  }
+]
+
+#########autorizacion de users######
+
+GET http://localhost:9000/api/users HTTP/1.1
+autorizado: dcba
+
+############autorizacion de beaches#$#####
+ 
+
+GET http://localhost:9000/api/beaches HTTP/1.1
+autorizado: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTQ2NTUzMTB9._VoaZ7KJX1_nk7QPMzNuSFXWXTAv9yhenNQNen2AnP0
+#####
+
+GET http://localhost:9000/api/login HTTP/1.1
+
+####################Users#########################
+
+GET http://localhost:9000/api/register HTTP/1.1
+Content-Type: application/json
+
+####register users########################
+POST http://localhost:9000/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Carlitos",
+    "lastname": "Villanueva",
+    "age": 35,
+    "email": "carlitosv@gmail.com",
+    "password": "12345"
+}
+####login users########################
+POST http://localhost:9000/api/login HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "email": "carlitosv@gmail.com",
+    "password": "12345"
+}
+
+
+################register usermany#####################
+POST http://localhost:9000/api/registerMany HTTP/1.1
+Content-Type: application/json
+
+[
+    {
+        "name":"Pepito",
+        "lastname": "Perez",
+        "age": 78,
+        "email": "pepito.pr@gmail.com",
+    "password": "Rutablanca11."
+    },
+    {
+        "name":"Pepita",
+        "lastname": "Lozano",
+        "age": 78,
+        "email": "pepita.lz@gmail.com",
+    "password": "Rutablanca12."
+    },
+    {
+        "name":"Juan",
+        "lastname": "Aries",
+        "age": 78,
+        "email": "juan.ar@gmail.com",
+    "password": "Rutablanca13."
+    }
+]
+
+
+
+####
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Pedro",
+    "lastname": "Infanyte",
+    "age": "78",
+    "email": "pedroinfante@gmail.com",
+    "password": "12345"
+}
+
+#####
+POST http://localhost:9000/api/usersMany HTTP/1.1
+Content-Type: application/json
+
+[
+    {
+        "name": "Juan",
+    "lastname": "Mendez",
+    "age": "75",
+    "email": "juan.mz1@gmail.com"
+    },
+    {
+        "name": "Juano",
+    "lastname": "Mendeza",
+    "age": "76",
+    "email": "juano.mz2@gmail.com"
+    },
+    {
+        "name": "Juana",
+    "lastname": "Mendeze",
+    "age": "77",
+    "email": "juana.mz3@gmail.com"
+    }
+]
+
+
+
+####
+GET http://localhost:9000/api/users/64ffa77952302a949f7800fe HTTP/1.1
+
+####array por ID playas ####
+
+GET http://localhost:9000/api/beaches/64f7d80c7526d30c9939666e HTTP/1.1
+
+########
+
+PUT http://localhost:9000/api/users/64e00b1bb506147b256d0bd9 HTTP/1.1
+Content-Type: application/json
+
+    {
+        "name":"Francisco",
+        "lastname": "Arboleda",
+        "age": 34
+    }
+
+
+######
+DELETE http://localhost:9000/api/users/64dfee41f9c727d730182cdf HTTP/1.1
+
+####
+POST http://localhost:9000/api/reservas HTTP/1.1
+Content-Type: application/json
+
+
+####
+POST http://localhost:9000/api/reservas HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombrecompleto": "1jose Zapata",
+  "email": "1josezapata@gmail.com",
+  "telnumero": 31164234547,
+  "ciudad": "Ibague",
+  "cpostal": 25631,
+  "pais": "Chile",
+  "detallesviaje": "Luna de miel",
+  "destino": "Cabos",
+  "fechai": 2,
+  "fechaf": 2,
+  "numeroadultos": 2,
+  "numeronino": 1,
+  "tipohabit": "Doble"
+}
+####
+GET http://localhost:9000/api/reservas HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjUxNGNkYmVkYzQ4NGE1OThjMjRlOWY5IiwidXNlcl9yb2xlIjoicmVndWxhciIsImlhdCI6MTY5NTk0NTI3MH0.nM_7bVBLN0Nr078udu-MwmofSnjgfIAAup4jm6EL1x0
+######
+POST http://localhost:9000/api/reservas HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjUxNGNkYmVkYzQ4NGE1OThjMjRlOWY5IiwidXNlcl9yb2xlIjoicmVndWxhciIsImlhdCI6MTY5NTk0NTI3MH0.nM_7bVBLN0Nr078udu-MwmofSnjgfIAAup4jm6EL1x0
+
+{
+  "nombrecompleto": "Jaimito cartero ",
+  "email": "jaimtocartero@gmail.com",
+  "creadoPor": "6514cdbedc484a598c24e9f9",
+  "telnumero": 285728572852,
+  "ciudad": "abc",
+  "cpostal": 12345,
+  "pais": "Colombia",
+  "detallesviaje": "Vacaciones",
+  "destino": "Cancun",
+  "fechai": 1,
+  "fechaf": 1 ,
+  "numeroadultos": 1 ,
+  "numeronino": 1 ,
+  "tipohabit": "Sencilla"
+}
+####login users########################
+POST http://localhost:9000/api/login HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "email": "jaimtocartero@gmail.com",
+    "password": "12345"
+}

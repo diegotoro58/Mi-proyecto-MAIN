@@ -1,0 +1,29 @@
+
+/* Estilos generales para el footer */
+.container-fluid {
+    text-align: center;
+    background-color: rgb(6, 6, 6);
+    font-family: 'Kalam', cursive; 
+    justify-content: center;
+    padding: 50px;
+    color: rgb(237, 234, 234);
+}
+
+.textofooter {
+    font-size: 18px;
+    color: #7e7c7c;
+    margin-bottom: 10px;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+    .textofooter {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+    /* Estilos para los iconos*/

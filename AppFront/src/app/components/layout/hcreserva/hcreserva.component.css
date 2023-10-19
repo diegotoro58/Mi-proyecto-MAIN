@@ -1,0 +1,75 @@
+.container-fluid {
+    display: flex; /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+     /* Centra horizontalmente los elementos */
+    padding: 0; 
+}
+.formulario {
+  /* El formulario flotará a la izquierda */
+  width: 40%;
+  max-width: 400px;
+  margin: 0 80px 0 80px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f6a535;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Estilo para las etiquetas de los campos */
+label {
+  font-weight: bold;
+  display: block;
+}
+
+/* Estilo para los campos de entrada de texto */
+.form-control {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* Estilo para el botón de enviar */
+.btn-info {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Estilo para el botón de enviar al pasar el mouse */
+.btn-info:hover {
+  background-color: #0056b3;
+}
+
+.mb-3{
+  font-family: 'Kalam', cursive;
+}
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column; /* Cambia la dirección de flex a columna (uno debajo del otro) en pantallas pequeñas */
+    align-items:center; /* Centra horizontalmente los elementos en pantallas pequeñas */
+    max-width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0;
+}
+
+#formulario {
+    width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0; /* Elimina los márgenes entre elementos en pantallas pequeñas */
+}
+.form-control {
+  max-width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+  margin: 0;
+}
+.img {
+    margin-left: 0;
+    width: 100%;
+}
+}

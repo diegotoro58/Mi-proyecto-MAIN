@@ -1,0 +1,66 @@
+
+.card-img {
+    margin-left: 7%;
+    width: 80%; /* La imagen ocupará el 100% del ancho de la sección */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.card-img-overlay {
+    position: absolute; /* Coloca el contenido encima de la imagen */
+    top: 50%; /* Coloca el contenido en el centro verticalmente */
+    left: 50%; /* Coloca el contenido en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos generales para la sección */
+.container-fluid.card {
+    display: flex; /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+    flex-direction: column; /* Cambia la dirección de flex a columna (uno debajo del otro) */
+    align-items: center; /* Centra horizontalmente los elementos */
+    padding: 0; /* Elimina el relleno para ajustar la imagen al ancho de la sección */
+}
+
+.img-container {
+    width: 70%; /* La imagen ocupará el 100% del ancho de la sección */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.card-title, .card-text {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+.card-title {
+    font-family: 'Kalam';
+    font-size: 48px;
+    color: rgb(122, 55, 55); 
+    font-display: bold;   
+}
+.card-text {
+font-family: 'Kalam';
+font-size: 20px;
+color: rgb(36, 35, 35);
+margin: 0%;
+}
+#frase1 {
+    font-family: 'Pacifico';
+    font-size: 30px;   
+}
+
+#titulo1 {
+    font-family: 'Pacifico';
+    color: rgb(24, 4, 81);
+}
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+    .card-title {
+        font-size: 18px; /* Tamaño de fuente más grande para dispositivos móviles */
+    }
+    #frase1 {
+        font-size: 18px;
+        text-align: justify;  
+        margin:5px 5px auto 5px; 
+    }
+    .card-text {
+        font-size: 14px; /* Tamaño de fuente más grande para dispositivos móviles */
+    }
+}

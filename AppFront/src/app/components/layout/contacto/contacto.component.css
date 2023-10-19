@@ -1,0 +1,28 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Shadows Into Light', cursive; */
+.list-group{
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+/* Estilos generales para laptop/desktop */
+        .card {
+            width: 40rem;
+            margin: 0 auto;
+        }
+
+        /* Estilos para dispositivos móviles (ancho máximo de 768px) */
+        @media screen and (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+            #maps {
+                width: 100%;
+            }
+        }

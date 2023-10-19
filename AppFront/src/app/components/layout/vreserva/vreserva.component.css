@@ -1,0 +1,79 @@
+.container-fluid {
+  display: flex;
+  /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+  /* Centra horizontalmente los elementos */
+  padding: 0;
+}
+
+/* Estilos para el contenedor del formulario */
+#formularioReserva {
+  margin: 0 80px 0 80px;
+  background-color: #5da3e8;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 40%;
+  max-width: 400px;
+}
+
+/* Estilos para la lista desordenada */
+ul.l1 {
+  list-style: none;
+  padding: 0;
+  font-family: 'Kalam', cursive;
+}
+
+/* Estilos para los elementos de la lista */
+ul.l1 li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para las etiquetas */
+label {
+  font-family: 'Kalam', cursive;
+  font-style: bold;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de datos */
+#li1 {
+  font-size: 18px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+    /* Cambia la dirección de flex a columna (uno debajo del otro) en pantallas pequeñas */
+    align-items: center;
+    /* Centra horizontalmente los elementos en pantallas pequeñas */
+    max-width: 100%;
+    /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0;
+  }
+
+  #formularioReserva {
+    width: 100%;
+    /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0;
+    /* Elimina los márgenes entre elementos en pantallas pequeñas */
+  }
+
+  .form-control {
+    max-width: 100%;
+    /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0;
+  }
+
+  .img {
+    margin-left: 0;
+    width: 100%;
+  }
+}

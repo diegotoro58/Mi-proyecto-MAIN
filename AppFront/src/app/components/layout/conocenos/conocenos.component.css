@@ -1,0 +1,79 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Shadows Into Light', cursive;
+/*font-family: 'Pacifico', cursive;*/
+.container-fluid {
+    display: flex;
+    /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+    /* Centra horizontalmente los elementos */
+    margin-left: 10%;
+    /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+    padding: 0;
+}
+
+#parte {
+    margin-left: 10%;
+    margin-top: -14%;
+}
+
+#mision {
+    color: rgb(165, 3, 3);
+    font-size: 40px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    display: block;
+
+}
+
+#tmision {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    color: rgb(11, 11, 8);
+    font-family: 'Kalam', cursive;
+    font-size: 22px;
+    font-style: bold;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4%;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+
+    .container-fluid {
+        margin-left: 0%;
+        flex-direction: column;
+        /* Cambia la dirección de flex a columna (uno debajo del otro) en pantallas pequeñas */
+        align-items: center;
+        /* Centra horizontalmente los elementos en pantallas pequeñas */
+    }
+
+    img.img-fluid {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .flex-shrink {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #mision {
+        font-size: 20px;
+    }
+    #tmision {
+        font-size: 16px;
+    }
+    
+    #parte {
+        margin-left: 0;
+        width: 100%;
+    }
+
+}

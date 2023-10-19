@@ -1,0 +1,47 @@
+
+<section class="container-fluid">
+    <section class="container-fluid1" id="formularioReserva">
+        <ul *ngFor="let reserva of arrReservas()" class="l1">
+            <label>Nombre Completo</label>
+            <li id="li1"> {{ reserva.nombrecompleto }}
+            </li>
+            <label>Email</label>
+            <li id="li1"> {{ reserva.email }}
+            </li>
+            <label>Nuemro de telefono</label>
+            <li id="li1"> {{ reserva.telnumero }}
+            </li>
+            <label>Ciudad</label>
+            <li id="li1"> {{ reserva.ciudad }}
+            </li>
+            <label>Código postal</label>
+            <li id="li1"> {{ reserva.cpostal }}
+            </li>
+            <label>Pais de origen</label>
+            <li id="li1"> {{ reserva.pais }}
+            </li>
+            <label>Detalles del Viaje</label>
+            <li id="li1"> {{ reserva.detallesviaje }}
+            </li>
+            <label>Destino</label>
+            <li id="li1"> {{ reserva.destino }}
+            </li>
+            <label>Desde el: </label>
+            <li id="li1"> {{ reserva.fechai }}
+            </li>
+            <label>Hasta el:</label>
+            <li id="li1"> {{ reserva.fechaf }}
+            </li>
+            <label>Numero de adultos</label>
+            <li id="li1"> {{ reserva.numeroadultos }}
+            </li>
+            <label>Numero de niños</label>
+            <li id="li1"> {{ reserva.numeronino }}
+            </li>
+            <label>Tipo de Habitacion</label>
+            <li id="li1"> {{ reserva.tipohabit }}
+            </li>
+        </ul>
+    </section>
+    <img class="img" src="../../../../assets/source/travel/umbrella.jpg" alt="" srcset="">
+    </section>

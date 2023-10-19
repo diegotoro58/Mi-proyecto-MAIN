@@ -1,0 +1,125 @@
+<form id="smedia" class="d-flex py-1 px-0 px-lg-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-beach" width="44" height="44"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M17.553 16.75a7.5 7.5 0 0 0 -10.606 0" />
+        <path d="M18 3.804a6 6 0 0 0 -8.196 2.196l10.392 6a6 6 0 0 0 -2.196 -8.196z" />
+        <path d="M16.732 10c1.658 -2.87 2.225 -5.644 1.268 -6.196c-.957 -.552 -3.075 1.326 -4.732 4.196" />
+        <path d="M15 9l-3 5.196" />
+        <path
+            d="M3 19.25a2.4 2.4 0 0 1 1 -.25a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 1 .25" />
+    </svg>
+</form><!----============================icon navbar=============-->
+<!------------------NAVBAR------------------>
+<nav class="navbar navbar-expand-lg bg-body-tertiary " id="menu">
+    <section class="container-fluid">
+        <a id="marca" class="navbar-brand" href="index.html"><span class="marca">Blue Ocean</span> <svg
+                xmlns="http://www.w3.org/2000/svg" id="logo2" class="icon icon-tabler icon-tabler-beach" width="60"
+                height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(24, 4, 81)" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M17.553 16.75a7.5 7.5 0 0 0 -10.606 0" />
+                <path d="M18 3.804a6 6 0 0 0 -8.196 2.196l10.392 6a6 6 0 0 0 -2.196 -8.196z" />
+                <path d="M16.732 10c1.658 -2.87 2.225 -5.644 1.268 -6.196c-.957 -.552 -3.075 1.326 -4.732 4.196" />
+                <path d="M15 9l-3 5.196" />
+                <path
+                    d="M3 19.25a2.4 2.4 0 0 1 1 -.25a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 1 .25" />
+            </svg></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-tabs " id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a [routerLink]="['/home']" id="tt1" class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a [routerLink]="['/conocenos']" class="nav-link" href="">Conócenos</a>
+                </li>
+
+                <li *ngIf="usersService.isLogged()" class="nav-item" role="presentation">
+                    <a [routerLink]="['/hcreserva']" class="nav-link" href="">Reservar</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a [routerLink]="['/tips']" class="nav-link" href="">Tips</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a [routerLink]="['/contacto']" class="nav-link" href="">Contáctanos</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a [routerLink]="['/register']" class="nav-link" href="">Registro</a>
+                </li>
+
+                <li class="nav-item" role="presentation" *ngIf="usersService.isLogged()">
+                    <a [routerLink]="['/vreserva']" class="nav-link" href="">Consulta tu reserva</a>
+                </li>
+            </ul>
+        </section>
+        <!------------------------------------boton dark and light------------>
+        <!----============================theme=============-->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+            </symbol>
+
+            <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+            </symbol>
+        </svg>
+
+        <!------------------------------------boton dark and light------------>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown w-25" data-bs-theme="light">
+                <button class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                    data-bs-display="static">
+                    <svg class="bi my-1 theme-icon-active" width="16" height="16" fill="currentColor">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    <span class="d-lg-none ms-2">Toggle theme</span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end px-1" aria-labelledby="bd-theme">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light">
+                            <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                                <use href="#sun-fill"></use>
+                            </svg>
+                            Light
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="dark">
+                            <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                                <use href="#moon-stars-fill"></use>
+                            </svg>
+                            Dark
+                        </button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!---========================btn login=================--->
+        <button *ngIf="!usersService.isLogged()" type="button" id="datos" class="btn btn-info">
+            <a [routerLink]="['/login']" class="nav-link" href="">Login</a>
+        </button>
+        <button *ngIf="usersService.isLogged()" (click)="onClickLogout()" type="button" id="datos" class="btn btn-info">
+            <a class="nav-link" href="">Logout</a>
+        </button>
+    </section>
+</nav>

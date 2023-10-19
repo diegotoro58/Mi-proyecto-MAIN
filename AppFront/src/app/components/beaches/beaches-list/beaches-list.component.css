@@ -1,0 +1,34 @@
+
+.container-fluid {
+  display: flex; /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+   /* Centra horizontalmente los elementos */
+  padding: 50px; 
+}
+  ol {
+    list-style-type: decimal; /* Tipo de numeración (puedes personalizarlo) */
+    font-size: 20px; /* Tamaño de fuente para la lista */
+    color: #180344; /* Color del texto de la lista */
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Estilos para los elementos <li> */
+  .lista {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none;
+  }
+
+  .lista b {
+    font-weight: bold; /* Texto en negrita */
+    color: #00abfb; /* Color para el elemento <b> */
+    text-decoration: none;
+  }
+  .lista ul {
+    list-style-type: decimal; /* Puedes cambiar esto a "none" si deseas eliminar los números */
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  .lista li{
+    text-decoration: none;
+  }
