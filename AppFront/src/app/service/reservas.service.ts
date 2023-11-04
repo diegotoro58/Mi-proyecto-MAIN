@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ReservasService {
 
   httpClient = inject(HttpClient);
-  baseUrl = 'http://localhost:9000/api/reservas';
+  baseUrl = 'http://auto-scaling-group-diego-1-1725703123.us-east-2.elb.amazonaws.com:8080/api/reservas';
 
 
   getAll(): Observable<any[]> {

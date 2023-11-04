@@ -10,6 +10,6 @@ export class BeachesService {
   constructor(private httpClient: HttpClient) { }
 
   getAll(): Observable<any[]> {
-    return this.httpClient.get<any[]>('http://localhost:9000/api/beaches');
+    return this.httpClient.get<any[]>('http://auto-scaling-group-diego-1-1725703123.us-east-2.elb.amazonaws.com:8080/api/beaches');
   }
 }
