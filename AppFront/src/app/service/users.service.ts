@@ -10,8 +10,8 @@ import { HttpClient } from '@angular/common/http';
 export class UsersService {
 
   httpClient = inject(HttpClient);
-  baseUrl = 'http://auto-scaling-group-diego-1-1725703123.us-east-2.elb.amazonaws.com:8080/api/users'
-  userUrl = 'http://localhost:9000/api'
+  baseUrl = '3.140.251.106:8080/api/users'
+  userUrl = 'http://3.140.251.106:8080/api'
 
 
   getAll() {

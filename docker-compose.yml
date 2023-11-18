@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017'
+    volumes:
+      - mongodata:/data/db
+    networks:
+      - app-network
+  frontend:
+    build:
+      context: AppFront 
+      dockerfile: Dockerfile
+    ports:
+      - '80:4200'
+    networks:
+      - app-network
+  backend:
+    build:
+      context: AppBack 
+      dockerfile: Dockerfile
+    ports:
+      - '8080:9000'
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/mi-primer-proyecto
+    networks:
+      - app-network      
+volumes:
+  mongodata:
+networks:
+  app-network:
+    driver: bridge
