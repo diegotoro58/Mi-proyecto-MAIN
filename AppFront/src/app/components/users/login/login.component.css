@@ -40,3 +40,16 @@
   color: rgb(199, 91, 13);
   font-size: 40px;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambia la dirección de flex a columna (uno debajo del otro) en pantallas pequeñas */
+    align-items:center; /* Centra horizontalmente los elementos en pantallas pequeñas */
+    max-width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0;
+}
+
+#formulario {
+    width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin-bottom: auto; /* Elimina los márgenes entre elementos en pantallas pequeñas */
+}
+}
