@@ -1,14 +1,14 @@
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom, Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class ReservasService {
 
   httpClient = inject(HttpClient);
-  baseUrl = '3.140.251.106:8080/api/reservas';
+  baseUrl = environment.ipPublic + '/api/reservas';
 
 
   getAll(): Observable<any[]> {

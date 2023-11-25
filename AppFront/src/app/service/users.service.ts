@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +10,8 @@ import { HttpClient } from '@angular/common/http';
 export class UsersService {
 
   httpClient = inject(HttpClient);
-  baseUrl = '3.140.251.106:8080/api/users'
-  userUrl = 'http://3.140.251.106:8080/api'
+  baseUrl =  environment.ipPublic + '/api/users'
+  userUrl =  environment.ipPublic + '/api'
 
 
   getAll() {
